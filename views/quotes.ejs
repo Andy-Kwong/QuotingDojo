@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <h3>Here are the awesome quotes!</h3>
+        <div id="allQuotes">
+            <% for (quote of allQuotes) { %>
+            <p><%= quote.quote %></p>
+            <p class="stamp">- <%= quote.name %> at <%= quote.createdOn %></p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
